@@ -15,6 +15,7 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'benmills/vimux'
 Plugin 'peterhoeg/vim-qml'
 Plugin 'fatih/vim-go'
+Plugin 'dag/vim-fish'
 call vundle#end()
 filetype plugin indent on
 
