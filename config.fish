@@ -1,9 +1,9 @@
 set fish_greeting
 if status --is-interactive
-    set GOROOT $HOME/go
-    set PATH $PATH ~/bin ~/android-studio/bin $GOROOT/bin;
+    set GOPATH $HOME/go
+    #set PATH ~/bin ~/anaconda/bin $PATH;
 end
-
+alias vim="nvim"
 
 set normal (set_color normal)
 set magenta (set_color magenta)
@@ -33,6 +33,7 @@ function fish_prompt
    printf '%s' (whoami)
    set_color -o black
    printf '@'
+   set_color normal
 
    set_color magenta
    printf '%s' (hostname|cut -d . -f 1)
@@ -54,3 +55,5 @@ function fish_prompt
    printf '↪ '
    set_color normal
 end
+
+set -g -x HOMEBREW_GITHUB_API_TOKEN '5ab918fde72167e2de0c09bdd21550c5450e4de2'
